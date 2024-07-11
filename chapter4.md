@@ -27,7 +27,9 @@ int main() {
 
 
 #include <stdio.h>
+
 int count_items(int arr[], int size) {
+
     if (size == 0) {
         return 0;
     }
@@ -35,12 +37,15 @@ int count_items(int arr[], int size) {
         return 1 + count_items(arr + 1, size - 1);
     }
 }
+
 int main() {
+
     int arr[] = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
     int count = count_items(arr, size);
     printf("Number of items in the list: %d\n", count);  // Output will be 5
     return 0;
+    
 }
 
 ---

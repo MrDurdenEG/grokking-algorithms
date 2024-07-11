@@ -6,12 +6,11 @@
 
 **Answer:**
 
-#include <stdio.h>
 
+#include <stdio.h>
 int sum(int a, int b) {
     return a + b;
 }
-
 int main() {
     int result = sum(3, 5);
     printf("The sum is: %d\n", result);
@@ -26,9 +25,8 @@ int main() {
 
 **Answer:**
 
+
 #include <stdio.h>
-
-
 int count_items(int arr[], int size) {
     if (size == 0) {
         return 0;
@@ -40,11 +38,8 @@ int count_items(int arr[], int size) {
 int main() {
     int arr[] = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
-    
     int count = count_items(arr, size);
-    
     printf("Number of items in the list: %d\n", count);  // Output will be 5
-    
     return 0;
 }
 

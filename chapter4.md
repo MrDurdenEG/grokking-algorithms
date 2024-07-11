@@ -59,6 +59,7 @@ int main() {
 #include <stdio.h>
 
 int find_max(int arr[], int size) {
+
     int max = arr[0];
     for (int i = 1; i < size; ++i) {
         if (arr[i] > max) {
@@ -67,7 +68,8 @@ int find_max(int arr[], int size) {
     }
     return max;
 }
-int main() {
+ int main() {
+
     int arr[] = {23, 45, 17, 52, 38};
     int size = sizeof(arr) / sizeof(arr[0]);
     int max_number = find_max(arr, size); 
